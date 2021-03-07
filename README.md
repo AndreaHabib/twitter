@@ -16,7 +16,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/AndreaHabib/twitter/blob/main/twitter2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/AndreaHabib/twitter/blob/main/tweet2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 # Project 3 - *Twitter Clone*
 
