@@ -93,14 +93,20 @@
                                                 <constraint firstAttribute="height" constant="30" id="tlG-9C-pGu"/>
                                             </constraints>
                                             <state key="normal" image="favor-icon"/>
+                                            <connections>
+                                                <action selector="FavoriteTweet:" destination="iag-KM-sWP" eventType="touchUpInside" id="bz3-dc-Fmu"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bab-GY-ruc" userLabel="retweetButt">
-                                            <rect key="frame" x="253" y="99" width="30" height="30"/>
+                                            <rect key="frame" x="279" y="99" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="LXU-zy-w8P"/>
                                                 <constraint firstAttribute="height" constant="30" id="pUP-81-fPW"/>
                                             </constraints>
                                             <state key="normal" image="retweet-icon"/>
+                                            <connections>
+                                                <action selector="Retweet:" destination="iag-KM-sWP" eventType="touchUpInside" id="gcq-yd-f6x"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -111,7 +117,7 @@
                                         <constraint firstItem="K1f-lq-55T" firstAttribute="top" secondItem="ahB-bA-YM0" secondAttribute="topMargin" id="TBr-iy-HAa"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="bR1-Ke-VLE" secondAttribute="trailing" constant="10" id="U95-bk-yVE"/>
                                         <constraint firstItem="Bab-GY-ruc" firstAttribute="top" secondItem="bR1-Ke-VLE" secondAttribute="top" id="dcv-Ri-htS"/>
-                                        <constraint firstItem="bR1-Ke-VLE" firstAttribute="leading" secondItem="Bab-GY-ruc" secondAttribute="trailing" constant="36" id="efQ-vj-0p2"/>
+                                        <constraint firstItem="bR1-Ke-VLE" firstAttribute="leading" secondItem="Bab-GY-ruc" secondAttribute="trailing" constant="10" id="efQ-vj-0p2"/>
                                         <constraint firstItem="OgP-S0-Xwf" firstAttribute="trailing" secondItem="ahB-bA-YM0" secondAttribute="trailingMargin" id="nQ2-QP-sDf"/>
                                         <constraint firstItem="sTE-ng-6Db" firstAttribute="top" secondItem="ahB-bA-YM0" secondAttribute="topMargin" id="saG-Pa-NxN"/>
                                         <constraint firstItem="sTE-ng-6Db" firstAttribute="leading" secondItem="ahB-bA-YM0" secondAttribute="leadingMargin" id="vie-3A-TYa"/>
@@ -119,7 +125,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="favButton" destination="bR1-Ke-VLE" id="pLv-c6-3og"/>
                                     <outlet property="profilePic" destination="sTE-ng-6Db" id="3rY-7y-mLe"/>
+                                    <outlet property="retweetButton" destination="Bab-GY-ruc" id="jaS-dU-5NB"/>
                                     <outlet property="tweetContentLabel" destination="OgP-S0-Xwf" id="4sn-r7-fid"/>
                                     <outlet property="usernameLabel" destination="K1f-lq-55T" id="ZzW-1Z-V6V"/>
                                 </connections>

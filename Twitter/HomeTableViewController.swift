@@ -24,6 +24,9 @@ class HomeTableViewController: UITableViewController {
         tableView.refreshControl = myRefreshControl
         
         loadTweet()
+        
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 150
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -112,7 +115,10 @@ class HomeTableViewController: UITableViewController {
         if let imageData = data {
             cell.profilePic.image = UIImage(data: imageData)
         }
-    
+        
+        cell.setFavorite(tweets[indexPath.row]["favorited"] as! Bool)
+        cell.tweetId = tweets[indexPath.row]["id"] as! Int
+        cell.setRetweeted(tweets[indexPath.row]["retweeted"] as!  Bool)
         
         return cell
     }
